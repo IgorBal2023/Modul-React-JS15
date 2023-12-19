@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 300px;
+  background-color: #000;
+  color: #ffffff;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.copyright_p {
+  padding: 0 20px;
+}

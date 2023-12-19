@@ -1,0 +1,39 @@
+.navDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.ul_menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  font-weight: 700;
+}
+
+.buy {
+  display: flex;
+  height: 50px;
+  padding: 15px 58px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background-color: #000;
+  color: #ffffff;
+}
