@@ -17,11 +17,11 @@ export const MainContent = () => {
                 <p>The telescoping arms expand and stay in any position you want, allowing you to maintain fit and isolation.</p>
             </div>
             <div className="side_foto">
-                <img class="content-item color-red content-item-active" src="src\assets\img\design_colors_red_side.jpg" alt="airpods-max" />
-                <img class="content-item color-blue" src="src\assets\img\design_colors_blue_side.jpg" alt="airpods-max" />
-                <img class="content-item color-green" src="src\assets\img\design_colors_green.jpg" alt="airpods-max" />
-                <img class="content-item color-silver" src="src\assets\img\design_colors_silver_side.jpg" alt="airpods-max" />
-                <img class="content-item color-black" src="src\assets\img\design_colors_black.jpg" alt="airpods-max" />
+                <img className="content-item color-red content-item-active" src="src\assets\img\design_colors_red_side.jpg" alt="airpods-max" />
+                <img className="content-item color-blue" src="src\assets\img\design_colors_blue_side.jpg" alt="airpods-max" />
+                <img className="content-item color-green" src="src\assets\img\design_colors_green.jpg" alt="airpods-max" />
+                <img className="content-item color-silver" src="src\assets\img\design_colors_silver_side.jpg" alt="airpods-max" />
+                <img className="content-item color-black" src="src\assets\img\design_colors_black.jpg" alt="airpods-max" />
 
             </div>
         </div>
