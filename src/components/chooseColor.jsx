@@ -1,43 +1,43 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/main.css";
 
-export const ChooseColor = ({contentItem}) => {
+export const ChooseColor = ({ contentItem }) => {
   const colorBtnRef = useRef(null);
   const [activeButton, setActiveButton] = useState("color-red");
 
-  useEffect(() => {
-    const colorButtons = colorBtnRef.current.querySelectorAll(
-      ".img_choose_color_btn"
-    );
-    console.log( colorButtons); 
+  // useEffect(() => {
+  //   const colorButtons = colorBtnRef.current.querySelectorAll(
+  //     ".img_choose_color_btn"
+  //   );
+  //   console.log(colorButtons);
 
-    colorButtons.forEach((button) => {
-      button.addEventListener("click", handleButtonClick);
+  //   colorButtons.forEach((button) => {
+  //     button.addEventListener("click", handleButtonClick);
 
-      return () => {
-        button.removeEventListener("click", handleButtonClick);
-      };
-    });
+  //     return () => {
+  //       button.removeEventListener("click", handleButtonClick);
+  //     };
+  //   });
 
-    return () => {
-      colorButtons.forEach((button) => {
-        button.removeEventListener("click", handleButtonClick);
-      });
-    };
-  }, []);
+  //   return () => {
+  //     colorButtons.forEach((button) => {
+  //       button.removeEventListener("click", handleButtonClick);
+  //     });
+  //   };
+  // }, []);
 
   const handleButtonClick = (event) => {
     const clickedButton = event.currentTarget;
     const buttonColor = clickedButton.getAttribute("data-button");
-    const contentActive = document.querySelectorAll(`.${buttonColor}`)
-    
-console.log(contentItem);
+    const contentActive = document.querySelectorAll(`.${buttonColor}`);
+
+    console.log(contentItem);
     // contentItem.forEach((item)=>{
     //   item.classList.removeEventListener(`content-item-active`)
     // })
-contentActive.forEach((item)=>{
-  item.classList.add(`content-item-active`)
-})
+    contentActive.forEach((item) => {
+      item.classList.add(`content-item-active`);
+    });
 
     setActiveButton(buttonColor);
     console.log(`buttonColor: ${buttonColor}`);

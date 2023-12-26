@@ -1,0 +1,20 @@
+.comment {
+  background-image: url("../assets/img/audio_quality_spatial.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.buttonHome {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: aliceblue;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}

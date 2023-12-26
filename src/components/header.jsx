@@ -4,15 +4,14 @@ import { Nav } from "./nav";
 
 export const Header = () => {
   const [contentItem, setContentItem] = useState(null);
-  useEffect(() => {
-    const contentItems = document.querySelectorAll(`.content-item-active`);
+  // useEffect(() => {
+  //   const contentItems = document.querySelectorAll(`.content-item-active`);
 
-     setContentItem(contentItems);  
-    
-    console.log(contentItems);
+  //   setContentItem(contentItems);
 
-  }, []);
-  
+  //   console.log(contentItems);
+  // }, []);
+
   console.log(contentItem);
   return (
     <div className="header">
