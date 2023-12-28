@@ -1,48 +1,29 @@
-import { useEffect, useState } from "react";
 import "../css/header.css";
 import { Nav } from "./nav";
+import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
+import { colorsArray } from "./colors";
 
 export const Header = () => {
-  const [contentItem, setContentItem] = useState(null);
-  // useEffect(() => {
-  //   const contentItems = document.querySelectorAll(`.content-item-active`);
+  const colorActive = useChangeColorBtnSelector();
 
-  //   setContentItem(contentItems);
-
-  //   console.log(contentItems);
-  // }, []);
-
-  console.log(contentItem);
+  console.log("colorActive", colorActive);
   return (
     <div className="header">
       <div className="container">
         <Nav />
+        <h1 className="title">AirPods Max</h1>
         <div className="header-image">
-          <img
-            className="content-item color-red content-item-active"
-            src="src\assets\img\airpods-max-select-side-red.png"
-            alt="airpods-max"
-          />
-          <img
-            className="content-item color-blue"
-            src="src\assets\img\airpods-max-select-side-blue.png"
-            alt="airpods-max"
-          />
-          <img
-            className="content-item color-green "
-            src="src\assets\img\airpods-max-select-side-green.png"
-            alt="airpods-max"
-          />
-          <img
-            className="content-item color-silver "
-            src="src\assets\img\airpods-max-select-side-silver.png"
-            alt="airpods-max"
-          />
-          <img
-            className="content-item color-black "
-            src="src\assets\img\airpods-max-select-side-black.png"
-            alt="airpods-max"
-          />
+          <div className="box-image">
+          {colorsArray.map((color) => (
+            <img
+              key={color}
+              className={`content-item ${
+                color === colorActive ? "content-item-active" : ""
+              } color-${colorActive}`}
+              src={`src/assets/img/airpods-max-select-side-${colorActive}.png`}
+              alt="airpods-max"
+            />
+          ))}</div>
         </div>
       </div>
     </div>

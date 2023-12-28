@@ -1,6 +1,10 @@
 import "../css/smartCase.css";
+import { colorsArray } from "./colors";
+import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
 
 export const SmartCase = () => {
+  const colorActive = useChangeColorBtnSelector();
+
   return (
     <div className="container">
       <section className="smart_case">
@@ -10,31 +14,16 @@ export const SmartCase = () => {
           enter a low-power state to save energy.
         </p>
         <div className="smart_case_img">
-          <img
-            className="case-photo content-item content-item-active color-red"
-            src="src\assets\img\airpods-max-smartcase-red.jpg"
-            alt="airpods-max"
-          />
-          <img
-            className="case-photo content-item color-blue"
-            src="src\assets\img\airpods-max-smartcase-blue.jpg"
-            alt="airpods-max"
-          />
-          <img
-            className="case-photo content-item color-green"
-            src="src\assets\img\airpods-max-smartcase-green.jpg"
-            alt="airpods-max"
-          />
-          <img
-            className="case-photo content-item color-silver"
-            src="src\assets\img\airpods-max-smartcase-silver.jpg"
-            alt="airpods-max"
-          />
-          <img
-            className="case-photo content-item color-black"
-            src="src\assets\img\airpods-max-smartcase-black.jpg"
-            alt="airpods-max"
-          />
+          {colorsArray.map((color) => (
+            <img
+              key={color}
+              className={`case-photo content-item ${
+                color === colorActive ? "content-item-active" : ""
+              }`}
+              src={`src/assets/img/airpods-max-smartcase-${colorActive}.jpg`}
+              alt="airpods-max"
+            />
+          ))}
         </div>
       </section>
     </div>

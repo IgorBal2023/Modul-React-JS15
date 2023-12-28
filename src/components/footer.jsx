@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container">
         <div className="phone">
           <p>Find a retailer near you</p>
-          <p>Or call 800 207 758</p>
+          <p id="contact">Or call 800 207 758</p>
           <img src="src\assets\img\apple_white.svg" alt="apple" />
         </div>
         <div className="copyright">

@@ -1,10 +1,22 @@
 .header {
   position: relative;
 }
+.title {
+  position: absolute;
+  font-size: 191px;
+  padding-top: 76px;
+  z-index: -1;
+}
 .header-image {
   padding: 33px 0 162px 0;
+  display: flex;
+  justify-content: center;
 }
-.header-image::before{
+.box-image {
+  width: 800px;
+  height: 755px;
+}
+.header-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,7 +39,6 @@
 .header-image:has(.color-red.content-item-active)::before {
   background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
 }
-.headert-image:has(.color-silver.content-item-active)::before {
+.header-image:has(.color-silver.content-item-active)::before {
   background: linear-gradient(180deg, #fafafa 0%, rgba(235, 235, 235, 0) 100%);
 }
-

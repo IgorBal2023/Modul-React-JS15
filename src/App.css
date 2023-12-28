@@ -7,6 +7,7 @@
   padding: 0 10px;
   margin: 0 auto;
 }
-.main_content,.time_work{
-  background-color:  #FAFAFA;
+.main_content,
+.time_work {
+  background-color: #fafafa;
 }

@@ -12,11 +12,14 @@ import { Comment } from "./routes/comment";
 import { Cart } from "./routes/cart";
 import "./css/normalize.css";
 import "./App.css";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <Provider store={store}>
         <Switch>
           <Route path="/comment">
             <Comment />
@@ -32,6 +35,7 @@ function App() {
             <Footer />
           </Route>
         </Switch>
+        </Provider>
       </BrowserRouter>
     </>
   );

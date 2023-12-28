@@ -5,12 +5,14 @@ export const Nav = () => {
   return (
     <div className="navDiv">
       <div className="label">
-        <img src="src\assets\img\Vector.svg" />
+        <NavLink to = "#">
+        <img className="labelApple" src="src\assets\img\Vector.svg" alt="apple" /></NavLink>
       </div>
       <nav className="nav">
         <ul className="ul_menu">
-          <li>Info</li>
-          <li>Contact</li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
           <NavLink to="/comment">
             <li>Comment</li>
           </NavLink>
