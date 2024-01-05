@@ -8,8 +8,8 @@ export const TimeWork = () => {
         <p className="time_work_number">20</p>
         <p className="time_work_text">
           hours of music, movies and calls with Active Noise Cancellation and
-          Custom Spatial Audio turned on. 5 And just 5 minutes of charging via
-          the Lightning connector gives you an hour and a half of sound. 6
+          Custom Spatial Audio turned on.  And just 5 minutes of charging via
+          the Lightning connector gives you an hour and a half of sound. 
         </p>
       </section>
     </div>
