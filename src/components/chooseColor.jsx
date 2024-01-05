@@ -30,7 +30,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("red")}
         >
           <img
-            src="src\assets\img\airpods-max-select-red.png"
+            src="src/assets/img/airpods-max-select-red.png"
             alt="airpods-max"
           />
         </button>
@@ -41,7 +41,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("blue")}
         >
           <img
-            src="src\assets\img\airpods-max-select-blue.png"
+            src="src/assets/img/airpods-max-select-blue.png"
             alt="airpods-max"
           />
         </button>
@@ -52,7 +52,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("green")}
         >
           <img
-            src="src\assets\img\airpods-max-select-green.png"
+            src="src/assets/img/airpods-max-select-green.png"
             alt="airpods-max"
           />
         </button>
@@ -63,7 +63,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("silver")}
         >
           <img
-            src="src\assets\img\airpods-max-select-silver.png"
+            src="src/assets/img/airpods-max-select-silver.png"
             alt="airpods-max"
           />
         </button>
@@ -74,7 +74,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("black")}
         >
           <img
-            src="src\assets\img\airpods-max-select-black.png"
+            src="src/assets/img/airpods-max-select-black.png"
             alt="airpods-max"
           />
         </button>
