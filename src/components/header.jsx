@@ -6,7 +6,6 @@ import { colorsArray } from "./colors";
 export const Header = () => {
   const colorActive = useChangeColorBtnSelector();
 
-  console.log("colorActive", colorActive);
   return (
     <div className="header">
       <div className="container">

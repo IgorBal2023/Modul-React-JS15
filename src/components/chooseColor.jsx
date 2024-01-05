@@ -6,7 +6,6 @@ import { setActiveColor } from "../store/changeColorBtn/actions";
 export const ChooseColor = () => {
   const dispatch = useDispatch();
   const activeButton = useChangeColorBtnSelector();
-  console.log("activeButton:", activeButton);
   const handleBtnClick = (color) => {
     dispatch(setActiveColor(color));
   };
