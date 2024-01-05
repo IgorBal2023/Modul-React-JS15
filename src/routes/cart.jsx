@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import "../css/cart.css";
+import imgR from "../assets/img/airpods-max-select-side-red.png";
+import imgG from "../assets/img/airpods-max-select-side-green.png";
+import imgBl from "../assets/img/airpods-max-select-side-blue.png";
+import imgS from "../assets/img/airpods-max-select-side-silver.png";
+import imgBk from "../assets/img/airpods-max-select-side-black.png";
 import { BuyProducts } from "../components/buyProducts";
 import { useState } from "react";
 
@@ -10,35 +15,35 @@ export const Cart = () => {
       name: "Airpods-Max",
       color: "Red",
       cost: 26799,
-      photo: "src/assets/img/airpods-max-select-side-red.png",
+      photo: imgR,
     },
     {
       id: "green",
       name: "Airpods-Max",
       color: "Green",
       cost: 26799,
-      photo: "src/assets/img/airpods-max-select-side-green.png",
+      photo: imgG,
     },
     {
       id: "blue",
       name: "Airpods-Max",
       color: "Blue",
       cost: 26799,
-      photo: "src/assets/img/airpods-max-select-side-blue.png",
+      photo: imgBl,
     },
     {
       id: "silver",
       name: "Airpods-Max",
       color: "Silver",
       cost: 26799,
-      photo: "src/assets/img/airpods-max-select-side-silver.png",
+      photo: imgS,
     },
     {
       id: "black",
       name: "Airpods-Max",
       color: "Black",
       cost: 26799,
-      photo: "src/assets/img/airpods-max-select-side-black.png",
+      photo: imgBk,
     },
   ];
 
