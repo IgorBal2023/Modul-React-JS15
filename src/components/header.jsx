@@ -14,16 +14,17 @@ export const Header = () => {
         <h1 className="title">AirPods Max</h1>
         <div className="header-image">
           <div className="box-image">
-          {colorsArray.map((color) => (
-            <img
-              key={color}
-              className={`content-item ${
-                color === colorActive ? "content-item-active" : ""
-              } color-${colorActive}`}
-              src={`src/assets/img/airpods-max-select-side-${colorActive}.png`}
-              alt="airpods-max"
-            />
-          ))}</div>
+            {colorsArray.map((color) => (
+              <img
+                key={color}
+                className={`content-item ${
+                  color === colorActive ? "content-item-active" : ""
+                } color-${colorActive}`}
+                src={`src/assets/img/airpods-max-select-side-${colorActive}.png`}
+                alt="airpods-max"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

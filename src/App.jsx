@@ -8,7 +8,7 @@ import { Header } from "./components/header";
 import { Main } from "./components/mainComponent";
 import { SmartCase } from "./components/smartCase";
 import { TimeWork } from "./components/timeWork";
-import { Comment } from "./routes/comment";
+import { TechSpecs } from "./routes/techSpecs";
 import { Cart } from "./routes/cart";
 import "./css/normalize.css";
 import "./App.css";
@@ -19,22 +19,22 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Provider store={store}>
-        <Switch>
-          <Route path="/comment">
-            <Comment />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/">
-            <Header />
-            <Main />
-            <SmartCase />
-            <TimeWork />
-            <Footer />
-          </Route>
-        </Switch>
+        <Provider store={store}>
+          <Switch>
+            <Route path="/techSpecs">
+              <TechSpecs />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/">
+              <Header />
+              <Main />
+              <SmartCase />
+              <TimeWork />
+              <Footer />
+            </Route>
+          </Switch>
         </Provider>
       </BrowserRouter>
     </>
