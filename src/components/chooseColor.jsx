@@ -1,4 +1,6 @@
 import "../css/main.css";
+import imgRed from "../assets/img/airpods-max-select-red.png";
+import imgBlue from "../assets/img/airpods-max-select-blue.png";
 import { useDispatch } from "react-redux";
 import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
 import { setActiveColor } from "../store/changeColorBtn/actions";
@@ -30,7 +32,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("red")}
         >
           <img
-            src="src/assets/img/airpods-max-select-red.png"
+            src={imgRed}
             alt="airpods-max"
           />
         </button>
@@ -41,7 +43,7 @@ export const ChooseColor = () => {
           onClick={() => handleBtnClick("blue")}
         >
           <img
-            src="src/assets/img/airpods-max-select-blue.png"
+            src={imgBlue}
             alt="airpods-max"
           />
         </button>
