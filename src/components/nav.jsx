@@ -1,5 +1,5 @@
 import "../css/nav.css";
-import img from "../assets/img/Vector.svg"
+import img from "../assets/img/Vector.svg";
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
 
 export const Nav = () => {
@@ -7,11 +7,7 @@ export const Nav = () => {
     <div className="navDiv">
       <div className="label">
         <NavLink to="#">
-          <img
-            className="labelApple"
-            src={img}
-            alt="apple"
-          />
+          <img className="labelApple" src={img} alt="apple" />
         </NavLink>
       </div>
       <nav className="nav">

@@ -1,4 +1,5 @@
 import "../css/techSpecs.css";
+import imgIconGreen from "../assets/img/apple_icon__green.png";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 export const TechSpecs = () => {
@@ -105,7 +106,7 @@ export const TechSpecs = () => {
               </h2>
               <img
                 className="apple_icon_green"
-                src="src/assets/img/apple_icon__green.png"
+                src={imgIconGreen}
                 alt="apple"
               />
             </div>

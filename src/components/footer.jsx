@@ -1,4 +1,5 @@
 import "../css/footer.css";
+import imgIconFooter from "../assets/img/apple_white.svg";
 
 export const Footer = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer = () => {
         <div className="phone">
           <p>Find a retailer near you</p>
           <p id="contact">Or call 800 207 758</p>
-          <img src="src/assets/img/apple_white.svg" alt="apple" />
+          <img src={imgIconFooter} alt="apple" />
         </div>
         <div className="copyright">
           <p className="copyright_p">Copyright © 2023 Apple Inc. </p>

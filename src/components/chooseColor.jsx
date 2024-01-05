@@ -1,6 +1,9 @@
 import "../css/main.css";
 import imgRed from "../assets/img/airpods-max-select-red.png";
 import imgBlue from "../assets/img/airpods-max-select-blue.png";
+import imgGreen from "../assets/img/airpods-max-select-green.png";
+import imgSilver from "../assets/img/airpods-max-select-silver.png";
+import imgBlack from "../assets/img/airpods-max-select-black.png";
 import { useDispatch } from "react-redux";
 import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
 import { setActiveColor } from "../store/changeColorBtn/actions";
@@ -31,10 +34,7 @@ export const ChooseColor = () => {
           }`}
           onClick={() => handleBtnClick("red")}
         >
-          <img
-            src={imgRed}
-            alt="airpods-max"
-          />
+          <img src={imgRed} alt="airpods-max" />
         </button>
         <button
           className={`img_choose_color_btn ${
@@ -42,10 +42,7 @@ export const ChooseColor = () => {
           }`}
           onClick={() => handleBtnClick("blue")}
         >
-          <img
-            src={imgBlue}
-            alt="airpods-max"
-          />
+          <img src={imgBlue} alt="airpods-max" />
         </button>
         <button
           className={`img_choose_color_btn ${
@@ -53,10 +50,7 @@ export const ChooseColor = () => {
           }`}
           onClick={() => handleBtnClick("green")}
         >
-          <img
-            src="src/assets/img/airpods-max-select-green.png"
-            alt="airpods-max"
-          />
+          <img src={imgGreen} alt="airpods-max" />
         </button>
         <button
           className={`img_choose_color_btn ${
@@ -64,10 +58,7 @@ export const ChooseColor = () => {
           }`}
           onClick={() => handleBtnClick("silver")}
         >
-          <img
-            src="src/assets/img/airpods-max-select-silver.png"
-            alt="airpods-max"
-          />
+          <img src={imgSilver} alt="airpods-max" />
         </button>
         <button
           className={`img_choose_color_btn ${
@@ -75,10 +66,7 @@ export const ChooseColor = () => {
           }`}
           onClick={() => handleBtnClick("black")}
         >
-          <img
-            src="src/assets/img/airpods-max-select-black.png"
-            alt="airpods-max"
-          />
+          <img src={imgBlack} alt="airpods-max" />
         </button>
       </div>
     </section>
