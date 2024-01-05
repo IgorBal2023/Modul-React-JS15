@@ -1,6 +1,16 @@
 import "../css/main.css";
+import { useDispatch } from "react-redux";
+import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
+import { setActiveColor } from "../store/changeColorBtn/actions";
 
 export const ChooseColor = () => {
+  const dispatch = useDispatch();
+  const activeButton = useChangeColorBtnSelector();
+  console.log("activeButton:", activeButton);
+  const handleBtnClick = (color) => {
+    dispatch(setActiveColor(color));
+  };
+
   return (
     <section className="choose_color">
       <div className="text_choose_color">
@@ -14,35 +24,61 @@ export const ChooseColor = () => {
         </div>
       </div>
       <div className="img_choose_color">
-        <button className="img_choose_color_btn img_choose_color_btn_activ" data-button="color-red">
+        <button
+          className={`img_choose_color_btn ${
+            activeButton === "red" ? "img_choose_color_btn_activ" : ""
+          }`}
+          onClick={() => handleBtnClick("red")}
+        >
           <img
             src="src\assets\img\airpods-max-select-red.png"
             alt="airpods-max"
           />
         </button>
-        <button className="img_choose_color_btn " data-button="color-blue">
+        <button
+          className={`img_choose_color_btn ${
+            activeButton === "blue" ? "img_choose_color_btn_activ" : ""
+          }`}
+          onClick={() => handleBtnClick("blue")}
+        >
           <img
             src="src\assets\img\airpods-max-select-blue.png"
             alt="airpods-max"
           />
         </button>
-        <button className="img_choose_color_btn " data-button="color-green">
+        <button
+          className={`img_choose_color_btn ${
+            activeButton === "green" ? "img_choose_color_btn_activ" : ""
+          }`}
+          onClick={() => handleBtnClick("green")}
+        >
           <img
             src="src\assets\img\airpods-max-select-green.png"
             alt="airpods-max"
           />
         </button>
-        <button className="img_choose_color_btn " data-button="color-silver">
+        <button
+          className={`img_choose_color_btn ${
+            activeButton === "silver" ? "img_choose_color_btn_activ" : ""
+          }`}
+          onClick={() => handleBtnClick("silver")}
+        >
           <img
             src="src\assets\img\airpods-max-select-silver.png"
             alt="airpods-max"
           />
         </button>
-        <button className="img_choose_color_btn " data-button="color-black">
-         <img
-          src="src\assets\img\airpods-max-select-black.png"
-          alt="airpods-max"
-        /> </button> 
+        <button
+          className={`img_choose_color_btn ${
+            activeButton === "black" ? "img_choose_color_btn_activ" : ""
+          }`}
+          onClick={() => handleBtnClick("black")}
+        >
+          <img
+            src="src\assets\img\airpods-max-select-black.png"
+            alt="airpods-max"
+          />
+        </button>
       </div>
     </section>
   );

@@ -1,7 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,13 +14,5 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Great Vibes", cursive;
   font-family: "Inter", sans-serif;
-  color: #000;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; 
-border: 1px solid green;
 }

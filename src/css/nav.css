@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
-
 }
 a {
   text-decoration: none;
@@ -12,7 +11,9 @@ a {
 ul {
   list-style: none;
 }
-
+.labelApple {
+  width: 50px;
+}
 button {
   padding: 0;
   border: none;
@@ -26,7 +27,8 @@ button {
   font-weight: 700;
 }
 
-.buy {
+.buy,
+.buttonBuyAll {
   display: flex;
   height: 50px;
   padding: 15px 58px;
@@ -34,6 +36,11 @@ button {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background-color: #000;
   color: #ffffff;
+}
+.buy {
+  background-color: #000;
+}
+.buttonBuyAll {
+  background-color: rgb(0, 166, 255);
 }

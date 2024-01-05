@@ -1,19 +1,32 @@
-import "../css/header.css"
-import { Nav } from "./nav"
-export const Header =()=>{
+import "../css/header.css";
+import { Nav } from "./nav";
+import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
+import { colorsArray } from "./colors";
 
-    return(
-        <div className="header">
-            <div className="container">
-                <Nav/>
-                <div className="header-image">
-                    <img class="content-item color-red content-item-active" src="src\assets\img\airpods-max-select-side-red.png" alt="airpods-max" />
-                    <img class="content-item color-blue" src="src\assets\img\airpods-max-select-side-blue.png" alt="airpods-max" />
-                    <img class="content-item color-green " src="src\assets\img\airpods-max-select-side-green.png" alt="airpods-max" />
-                    <img class="content-item color-silver " src="src\assets\img\airpods-max-select-side-silver.png" alt="airpods-max" />
-                    <img class="content-item color-black " src="src\assets\img\airpods-max-select-side-black.png" alt="airpods-max" />
-                </div>
-            </div>
+export const Header = () => {
+  const colorActive = useChangeColorBtnSelector();
+
+  console.log("colorActive", colorActive);
+  return (
+    <div className="header">
+      <div className="container">
+        <Nav />
+        <h1 className="title">AirPods Max</h1>
+        <div className="header-image">
+          <div className="box-image">
+            {colorsArray.map((color) => (
+              <img
+                key={color}
+                className={`content-item ${
+                  color === colorActive ? "content-item-active" : ""
+                } color-${colorActive}`}
+                src={`src/assets/img/airpods-max-select-side-${colorActive}.png`}
+                alt="airpods-max"
+              />
+            ))}
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};

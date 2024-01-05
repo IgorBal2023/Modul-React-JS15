@@ -1,8 +1,7 @@
-# React + Vite
+# Airpods Max
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a landing site.  
+Done using React.  
+Consists of the main page, technical description of the product and cart.  
+The transition was made using routing.  
+On the main page, it is possible to select product color options, done using Redux.

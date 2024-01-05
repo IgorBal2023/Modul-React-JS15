@@ -1,0 +1,66 @@
+.cardBlock {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.blockProduct {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+.fotoCard {
+  width: 250px;
+  padding: 15px;
+}
+.buyProduct {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+}
+.buyAll {
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.buyProductCart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.blockProductCart {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  border-radius: 15px;
+  max-width: 520px;
+  gap: 20px;
+}
+.blockProductCartLeft {
+  max-width: 250px;
+}
+.blockProductCartRight {
+  max-width: 250px;
+  text-align: left;
+  align-self: end;
+  padding: 15px;
+}
+.deleteProduct {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+}
+.totalBuy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  gap: 50px;
+  margin-top: 100px;
+}
