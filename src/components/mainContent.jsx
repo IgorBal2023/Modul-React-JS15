@@ -1,9 +1,31 @@
 import "../css/main.css";
+import designColorsSideRed from "../assets/img/design_colors_red_side.jpg";
+import designColorsSideBlue from "../assets/img/design_colors_blue_side.jpg";
+import designColorsSideGreen from "../assets/img/design_colors_green_side.jpg";
+import designColorsSideSilver from "../assets/img/design_colors_silver_side.jpg";
+import designColorsSideBlack from "../assets/img/design_colors_black_side.jpg";
 import { colorsArray } from "./colors";
 import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
 
 export const MainContent = () => {
   const colorActive = useChangeColorBtnSelector();
+
+  const activeImgContent = (colorActive) => {
+    switch (colorActive) {
+      case "red":
+        return designColorsSideRed;
+      case "blue":
+        return designColorsSideBlue;
+      case "green":
+        return designColorsSideGreen;
+      case "silver":
+        return designColorsSideSilver;
+      case "black":
+        return designColorsSideBlack;
+      default:
+        return designColorsSideRed;
+    }
+  };
 
   return (
     <section className="main_content">
@@ -37,8 +59,8 @@ export const MainContent = () => {
               className={`content-item ${
                 color === colorActive ? "content-item-active" : ""
               } `}
-              src={`src/assets/img/design_colors_${colorActive}_side.jpg`}
-              alt="airpods-max"
+              src={activeImgContent(colorActive)}
+              alt={`airpods-max-${colorActive}`}
             />
           ))}
         </div>
