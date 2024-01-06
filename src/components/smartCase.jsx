@@ -1,9 +1,31 @@
 import "../css/smartCase.css";
+import airpodsMaxSmartcaseRed from "../assets/img/airpods-max-smartcase-red.jpg";
+import airpodsMaxSmartcaseBlue from "../assets/img/airpods-max-smartcase-blue.jpg";
+import airpodsMaxSmartcaseGreen from "../assets/img/airpods-max-smartcase-green.jpg";
+import airpodsMaxSmartcaseSilver from "../assets/img/airpods-max-smartcase-silver.jpg";
+import airpodsMaxSmartcaseBlack from "../assets/img/airpods-max-smartcase-black.jpg";
 import { colorsArray } from "./colors";
 import { useChangeColorBtnSelector } from "../store/changeColorBtn/selectors";
 
 export const SmartCase = () => {
   const colorActive = useChangeColorBtnSelector();
+
+  const activImgSmartCase = (colorActive) => {
+    switch (colorActive) {
+      case "red":
+        return airpodsMaxSmartcaseRed;
+      case "blue":
+        return airpodsMaxSmartcaseBlue;
+      case "green":
+        return airpodsMaxSmartcaseGreen;
+      case "silver":
+        return airpodsMaxSmartcaseSilver;
+      case "black":
+        return airpodsMaxSmartcaseBlack;
+      default:
+        return airpodsMaxSmartcaseRed;
+    }
+  };
 
   return (
     <div className="container">
@@ -20,8 +42,8 @@ export const SmartCase = () => {
               className={`case-photo content-item ${
                 color === colorActive ? "content-item-active" : ""
               }`}
-              src={`src/assets/img/airpods-max-smartcase-${colorActive}.jpg`}
-              alt="airpods-max"
+              src={activImgSmartCase(colorActive)}
+              alt={`airpods-max-${colorActive}`}
             />
           ))}
         </div>
