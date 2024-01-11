@@ -1,4 +1,4 @@
-import { combineReducers, compose, createStore } from "@reduxjs/toolkit";
+import { combineReducers, compose, createStore } from "redux";
 import { changeActiveColorReducer } from "./changeColorBtn/reducer";
 
 const rootReducer = combineReducers({
